@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping()
 public class ManController {
 
-    @GetMapping("{a}/{b}")
+    @GetMapping("/{a}/{b}")
     public String get(@PathVariable String a, @PathVariable String b) {
         return a + "\t" + b;
     }
